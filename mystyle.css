@@ -15,10 +15,9 @@
 }
 
 .scheda {
-  width : 180px;
   height: 420px;
-  padding: 10px;
-  margin: 5px;
+  padding: 8px;
+  margin: 2px;
   margin: auto;
   background-color: beige;
   text-align: center;
@@ -102,12 +101,11 @@ a:link a:visited{
  }
 
 .photo {
-  width: 150px;
   height: 200px;
  }
 
 .cover {
-  height: 400px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
  }
@@ -117,7 +115,7 @@ a:link a:visited{
  }
 
 .mini-cover {
-  height: 100px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
  }
@@ -138,3 +136,32 @@ a:link a:visited{
       margin: 0;
       padding: 0
 }
+
+.box {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, mediumseagreen, forestgreen, green, yellowgreen, olivedrab, darkolivegreen);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+

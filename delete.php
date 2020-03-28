@@ -27,10 +27,10 @@ if ($_GET['id']) {
     <div class="container-fluid">
     <br>
       <div class="card schermo ">
-      <h1> Delete pet´s card</h1>
+      <h1> Delete cards</h1>
       </div>
 
-      <div class="card schermo">
+      <div class="card foglio">
         <h3>Do you really want to delete <?php echo $data['name'] ?>'s card?</h3>
         <p> Look a this cute face!</p>
         <div class="cover">

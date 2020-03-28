@@ -19,11 +19,10 @@ if ($_GET) {
   $ZIP = $_GET['ZIP'];
   $coordLat = $_GET['coordLat'];
   $coordLon= $_GET['coordLon'];
-  $size = $_GET['size'];
-  $country = $_GET['country']
+  $country = $_GET['country'];
   
 
-   $sql = "INSERT INTO pet (name, photo, breed, age, adoptable, description, hobbies, web, location, image, address, city, ZIP, coordLat, coordLon, size, country) VALUES ('$name','$photo','$breed','$age','$adoptable','$description','$hobbies','$web', '$location','$image','$address','$city','$ZIP','$coordLat','$coordLon', '$size','$country')";
+   $sql = "INSERT INTO pet (name, photo, breed, age, adoptable, description, hobbies, web, location, image, address, city, ZIP, coordLat, coordLon, country) VALUES ('$name','$photo','$breed','$age','$adoptable','$description','$hobbies','$web', '$location','$image','$address','$city','$ZIP','$coordLat','$coordLon','$country')";
     if($connect->query($sql) === TRUE) {
       echo "<br><p>You have successfully created a new record! <br> What do you want to do now?</p><br>" ;
       echo "<a href='../create.php'><button type='button'class='btn btn-outline-succcess btn-lg'>Add another pets´s card </button></a>";

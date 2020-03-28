@@ -3,10 +3,6 @@ ob_start();
 session_start();
 require_once 'dbconnect.php';
 
-if(isset($_SESSION["user"])){
-  header("Location: home.php");
-  exit;
-}
 
 $res=mysqli_query($conn, "SELECT * FROM users WHERE userId=".$_SESSION['user']);
 $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
@@ -34,7 +30,7 @@ $resPet = mysqli_query($conn, "SELECT * FROM pet");
     <br>
     <br>
       <div class="card schermo" >
-         <h3> Hi <?php echo $userRow['userName' ]; ?>, <br> Welcome to the Weird Pet´s Adoption Center! </h3>
+          <h3>  Welcome to the  Lil & Big section of the <br><span class="rainbow-text">Weird Pet´s Adoption Center</span> !</h3>
           <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-around">
             
               <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
@@ -62,7 +58,7 @@ $resPet = mysqli_query($conn, "SELECT * FROM pet");
       </div>
       <br>
 
-  <div class="card schermo" >
+  <div class="card foglio" >
       <div class="card-columns">
   
  <?php 
@@ -73,7 +69,10 @@ $resPet = mysqli_query($conn, "SELECT * FROM pet");
             if($result-> num_rows > 0) { 
                 while($row = $result->fetch_assoc()) {
                   echo  "<div class='card scheda'>
+                           <div class='box'>
                             <img class='card-img-top photo' src='".$row["photo"]. "'alt='click to see more.'></a>
+                            <span class='badge badge-pill badge-success top-right'>lil'cutie</span>
+                            </div>
                           <div class='card-body'>
                             <h5 class='card-title'>".$row["name"]. "</h5>
                             <p class='card-text'> A ".$row["breed"]. ", ".$row["age"]." years old.<br> ".$row["city"]. "</p>
@@ -100,7 +99,10 @@ $resPet = mysqli_query($conn, "SELECT * FROM pet");
             if($result-> num_rows > 0) { 
                 while($row = $result->fetch_assoc()) {
                   echo  "<div class='card scheda'>
+                           <div class='box'>
                             <img class='card-img-top photo' src='".$row["photo"]. "'alt='click to see more.'></a>
+                            <span class='badge badge-pill badge-success top-right'>big beauty</span>
+                            </div>
                           <div class='card-body'>
                             <h5 class='card-title'>".$row["name"]. "</h5>
                             <p class='card-text'> A ".$row["breed"]. ", ".$row["age"]." years old.<br> ".$row["city"]. "</p>

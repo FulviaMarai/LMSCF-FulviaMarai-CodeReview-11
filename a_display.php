@@ -29,7 +29,7 @@ if ($_GET['id']) {
     <div class="container-fluid">
     <br>
       <div class="card schermo">
-          <h1> <?php echo $data['name'] ?> </h1>
+           <h1> <span class="rainbow-text"><?php echo $data['name'] ?> </span></h1>
       </div>
     <br>
     <div class="card foglio">

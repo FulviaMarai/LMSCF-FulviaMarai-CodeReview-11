@@ -83,7 +83,7 @@ if( isset($_POST['btn-login']) ) {
    <form method="post"  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete= "off">
  
    
-            <h2>Welcome to the Weird Pet´s Adoption Center</h2 >
+            <h2>Welcome to the <span class="rainbow-text">Weird Pet´s Adoption Center!</span></h2 >
             <h2 class="small"> Please write your e-mail and password to enter</h2>
             <hr />
            

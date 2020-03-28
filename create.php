@@ -16,10 +16,10 @@
   <div class="container-fluid">
     <br>
   <div class="card schermo">
-    <h2> Weird Pet´s Adoption Center <br> Add a new pet card</h1>
+    <h3> Create-a-card! Add a pet to the  <br><span class="rainbow-text">Weird Pet´s Adoption Center</span> !</h3>
   </div>
 
-  <div class="card schermo">
+  <div class="card foglio">
    <form  class="form-group" action="actions/a_create.php" method= "get">
       
          <div class="row">
@@ -56,7 +56,7 @@
             <label for="city"> What's the city? </label> <br>
               <input  type="text" name="city"  placeholder="city" /> <br> 
             <label for="country"> What's the country? </label> <br>
-              <input  type="text" name="country"  placeholder="cuntry" /> <br> 
+              <input  type="text" name="country"  placeholder="country" /> <br> 
              
             <label for="coordLat"> Can you write the coordinates? (this is for googleMap API)  </label> <br>
               <input  type="text" name="coordlat"  placeholder="Write here the latitude" /> <br>

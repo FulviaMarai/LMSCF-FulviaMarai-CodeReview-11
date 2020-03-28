@@ -27,10 +27,10 @@ if ($_GET['id']) {
 <div class="container-fluid">
     <br>
   <div class="card schermo">
-    <h2> Weird Pet´s Adoption Center <br> Update the pet card</h1>
+    <h2>  <span class="rainbow-text">Weird Pet´s Adoption Center</span><br> Update the card</h1>
   </div>
 
-  <div class="card schermo">
+  <div class="card foglio">
    <form  class="form-group" action="actions/a_update.php" method= "get">
       
          <div class="row">

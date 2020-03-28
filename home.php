@@ -36,7 +36,13 @@ require_once 'actions/db_connect.php';
     <br>
     <br>
       <div class="card schermo">
-         <h3> Hi <?php echo $userRow['userName' ]; ?>, <br> Welcome to the Weird Pet´s Adoption Center! </h3>
+                  <h3> 
+
+<?php $greeting = (date('G') < 14) ? 'Good morning' : 'Good evening';
+echo $greeting;
+?>
+
+ ,<?php echo $userRow['userName' ]; ?>! <br> Welcome to the <span class="rainbow-text">Weird Pet´s Adoption Center!</span> </h3>
           <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-around">
             
               <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
@@ -64,7 +70,7 @@ require_once 'actions/db_connect.php';
       </div>
       <br>
 
-  <div class="card schermo" >
+  <div class="card foglio" >
       <div class="card-columns">
   
  <?php 
