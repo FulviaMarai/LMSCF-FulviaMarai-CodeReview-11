@@ -90,8 +90,8 @@ if ($_GET['id']) {
       <hr>
 
         <div class='d-flex justify-content-center'>
-      <a href="update.php?id='.$data['id'].'"> <button type='button' class='bottverde btn-lg'>Edit</button></a>
-      <a href="delete.php?id='.$data['id'].'"> <button type='button' class='bottrosso btn-lg'>Delete</button></a>
+      <a href="update.php?id=<?php echo $data['id'] ?>"> <button type='button' class='bottverde btn-lg'>Edit</button></a>
+      <a href="delete.php?id= <?php echo $data['id'] ?>"> <button type='button' class='bottrosso btn-lg'>Delete</button></a>
       <a href= "admin.php"><button  type="button" class='btn btn-lg'>Back</button ></a>
         </div>
 

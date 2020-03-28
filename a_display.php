@@ -16,7 +16,7 @@ if ($_GET['id']) {
 <html>
 <head>
   
-  <title> Display Pet´s card</title>
+  <title> Display Pet´s cards</title>
  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -61,6 +61,7 @@ if ($_GET['id']) {
 
           </div>
       </div>
+      <hr>
       <div class="row">
           <div class="col">
              <h5> Where can you find <?php echo $data['name'] ?> ? </h5>
@@ -84,8 +85,13 @@ if ($_GET['id']) {
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap"
     async defer></script>
 
-            </div> 
-          </div>
+      </div> 
+</div>
+<hr>
+        <div class='d-flex justify-content-center'>
+      <a href= "home.php"><button  type="button" class='btn btn-lg'>Back</button ></a>
+        </div>
+
       </div>
 
        <br> 

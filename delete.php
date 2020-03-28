@@ -24,22 +24,28 @@ if ($_GET['id']) {
    
 </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
     <br>
       <div class="card schermo ">
       <h1> Delete pet´s card</h1>
       </div>
 
-      <div class="card scheda">
-        <h3>Do you really want to delete this card?</h3>
+      <div class="card schermo">
+        <h3>Do you really want to delete <?php echo $data['name'] ?>'s card?</h3>
+        <p> Look a this cute face!</p>
+        <div class="cover">
+              <img src="<?php echo $data['photo'] ?>" >
+        </div> 
         <br>
+
         <form action ="actions/a_delete.php" method="get">
           <input type="hidden" name= "id" value="<?php echo $data['id'] ?>" />
-          <button type="submit" class='btn btn-outline-danger btn-lg'> Yes, delete it!</button >
-          <a href="index.php"><button type="button" class='btn btn-outline-info btn-lg'> No, do not delete! </button ></a>
+          <button type="submit" class='bottrosso btn-lg'> Yes, delete it!</button >
+          <a href="admin.php"><button type="button" class='bottverde btn-lg'> No, don't delete! </button ></a>
         </form>
       </div>
     </div>
+    <br>
   </body>
 </html>
 

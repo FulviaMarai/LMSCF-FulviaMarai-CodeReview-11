@@ -3,16 +3,12 @@ ob_start();
 session_start();
 require_once 'dbconnect.php';
 
-if( !isset($_SESSION['admin']) && !isset($_SESSION['user']) ) {
- header("Location: index.php");
- exit;
-}
 if(isset($_SESSION["user"])){
   header("Location: home.php");
   exit;
 }
 
-$res=mysqli_query($conn, "SELECT * FROM users WHERE userId=".$_SESSION['admin']);
+$res=mysqli_query($conn, "SELECT * FROM users WHERE userId=".$_SESSION['user']);
 $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 
 $resPet = mysqli_query($conn, "SELECT * FROM pet");

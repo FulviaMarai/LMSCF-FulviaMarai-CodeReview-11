@@ -18,10 +18,12 @@ if ($_GET) {
   $ZIP = $_GET['ZIP'];
   $coordLat = $_GET['coordLat'];
   $coordLon= $_GET['coordLon'];
+  $size = $_GET['size'];
+  $country = $_GET['country']
 
    $id = $_GET['id'];
 
-   $sql = "UPDATE pet SET name = '$name', photo = '$photo', breed = '$breed', age = '$age', adoptable = '$adoptable', description = '$description', hobbies = '$hobbies', web = '$web', location = '$location', image = '$image' , address = '$address', city = '$city', ZIP = '$ZIP', coordLat = '$coordLat', coordLon = '$coordLon'   WHERE id = {$id}" ;
+   $sql = "UPDATE pet SET name = '$name', photo = '$photo', breed = '$breed', age = '$age', adoptable = '$adoptable', description = '$description', hobbies = '$hobbies', web = '$web', location = '$location', image = '$image' , address = '$address', city = '$city', ZIP = '$ZIP', coordLat = '$coordLat', coordLon = '$coordLon', size = '$size', country = '$country'   WHERE id = {$id}" ;
    if($connect->query($sql) === TRUE) {
     
        echo  "<p>Successfully updated</p>";

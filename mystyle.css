@@ -1,6 +1,8 @@
 
 .container-fluid {
   background-color: olivedrab;
+    text-align: center;
+     margin: auto;
 }
 
 .schermo {
@@ -30,7 +32,7 @@
 
 .foglio {
   width : 90%;
-  padding: 14px;s
+  padding: 14px;
   margin: auto;
   background-color: beige;
   text-align: center;
