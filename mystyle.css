@@ -1,0 +1,138 @@
+
+.container-fluid {
+  background-color: olivedrab;
+}
+
+.schermo {
+  width : 90%;
+  padding: 15px;
+  margin: auto;
+  background-color: beige;
+  text-align: center;
+  border: 2px solid olivedrab;
+}
+
+.scheda {
+  width : 180px;
+  height: 420px;
+  padding: 10px;
+  margin: 5px;
+  margin: auto;
+  background-color: beige;
+  text-align: center;
+  border: 2px solid yellowgreen;
+}
+
+.scheda:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.foglio {
+  width : 90%;
+  padding: 14px;s
+  margin: auto;
+  background-color: beige;
+  text-align: center;
+  border: 5px solid yellowgreen;
+}
+
+table {
+  width: 90%;
+  text-align: justify;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  background-color: white;
+  width: 400px;
+  padding: 5px;
+  margin: 2px;
+}
+
+button {
+  width: 300px;
+  background-color: olivedrab;
+  color: white;
+}
+
+.btn {
+  width: 150px;
+  background-color: olivedrab;
+  color: white;
+}
+
+.bottrosso {
+  width: 120px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bottverde {
+    width: 120px;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+ 
+a:link a:visited{
+  color:  olivedrab;
+  text-decoration: none;
+}
+
+ a:hover{
+  color: white;
+  background-color: yellowgreen;
+  text-decoration: none;
+}
+
+ a:active {
+   color:  yellowgreen;
+   text-decoration: none;
+ }
+
+.photo {
+  width: 150px;
+  height: 200px;
+ }
+
+.cover {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.cover  img {
+  height: 90%;
+ }
+
+.mini-cover {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .mini-cover  img {
+  height: 50%;
+ }
+
+.footer {
+  color: white;
+  text-align: center;
+}
+
+
+#map {
+        
+      height: 90%;
+      margin: 0;
+      padding: 0
+}
